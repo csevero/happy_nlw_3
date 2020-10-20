@@ -1,0 +1,83 @@
+#page-landing {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 100%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#page-landing .content-wrapper {
+  position: relative; /*relative para que os componentes abaixos com position absolute fique dentro do estipulado*/
+
+  width: 100%;
+  max-width: 1100px;
+
+  height: 100%;
+  max-height: 675px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+
+  background: url("../../images/vector/landing.svg") no-repeat 80% center; /* colocando uma url (direcionando para uma imagem), no repeat significa que ela será posta apenas 1 vez no back, 80% se refere ao alinhamento horizontal dela e o center no final é sobre o alinhamento vertical do back*/
+}
+
+#page-landing .content-wrapper main {
+  max-width: 358px;
+}
+
+#page-landing .content-wrapper main h1 {
+  font-size: 76px;
+  font-weight: 900;
+  line-height: 75px;
+}
+
+#page-landing .content-wrapper main p {
+  margin-top: 48px;
+  font-size: 24px;
+  line-height: 34px;
+}
+
+.content-wrapper .location {
+  position: absolute;
+
+  right: 0;
+  top: 0;
+
+  font-size: 24px;
+  line-height: 34px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.content-wrapper .location strong {
+  font-weight: 800;
+}
+
+.content-wrapper .enter-app {
+  position: absolute;
+
+  right: 0;
+  bottom: 0;
+
+  width: 80px;
+  height: 80px;
+
+  background: #ffd666;
+  border-radius: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color 0.2s;
+}
+
+.content-wrapper .enter-app:hover {
+  background: #96FEFF;
+}
